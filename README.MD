@@ -1,0 +1,2 @@
+# Human-Computer Interaction I (COMP3020)
+Introduced the concepts of user centered design and HCI. This involved learning about requirements gathering, prototyping, analytical/heuristic evaluation, and usability testing by implementing learnt design principles, heuristics, and IDEO methodologies.

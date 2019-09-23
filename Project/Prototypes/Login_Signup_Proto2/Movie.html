@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Player</title>
+  <link rel="stylesheet" type="text/css" href="movie.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+    
+<video autoplay muted loop id="myVideo">
+  <source src="dearborn_st_bridge_4k.mp4"type="video/mp4">
+</video>
+
+  
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+  <div class="section">
+    <div class="content">
+      <h1><i class="fas fa-film fa-spin-custom"></i></h1>
+      <a href="signUpForm.html" class="hvr-bounce-in"> Sign up Now</a>
+        <a href="loginForm.html" class="hvr-bounce-in " id="login"> Login</a>
+    </div>
+<!--    <p id="special">"You deserve better than you think"</p>-->
+      
+
+  </div>
+
+
+</body>
+
+</html>

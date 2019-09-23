@@ -1,0 +1,160 @@
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    min-height: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  /* background: black; */
+  background-image: url(movies/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-position: center;*/
+  animation: silde 30s infinite;
+
+}
+#tube{
+    font-size: 50px;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.content h1{
+  color: white;
+  font-size: 60px;
+  letter-spacing: 16px;
+  text-align: center;
+font-family: 'Ubuntu', sans-serif;
+
+
+}
+
+.content a{
+  /* background: blue; */
+  padding: 10px 24px;
+  color: white;
+  text-decoration: none;
+  background: #ffc107;
+  border-radius: 34px;
+  text-align: center;
+/*  filter: blur(0.5px);*/
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/*
+.content a:hover{
+  opacity: 0.6;
+  filter: none;
+}
+*/
+
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+#special{
+	display:inherit;
+	margin-top: 49.1%;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+}
+
+#login{
+    margin-left: 40px;
+    background: #2ECC40;
+    padding: 10px 20px;
+}
+#iconSize{
+    font-size: 50px;
+}
+
+
+
+@keyframes silde {
+
+  0%{
+    background-image: url(movies/1.jpg);
+  }
+
+
+  17%{
+    background-image: url(movies/2.jpg);
+  }
+
+  33%{
+    background-image: url(movies/3.jpg);
+  }
+
+  50%{
+    background-image: url(movies/4.jpg);
+  }
+
+  
+
+  83%{
+    background-image: url(movies/5.jpg);
+  }
+
+
+}
+
+
+.fa-spin-custom:hover {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}

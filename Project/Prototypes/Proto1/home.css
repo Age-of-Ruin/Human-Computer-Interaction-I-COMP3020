@@ -1,0 +1,90 @@
+* Nav Bar Styles */
+.fa-bars{
+	font-size: 40px;
+	color: gold;
+}
+
+.nav-icon:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+.navbar-expand{
+    color: gold;
+}
+
+.fa-bars:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+.button-outline-secondary:hover{
+	color: blue;
+}
+
+#brand{
+	position: absolute;
+	right: 0;
+	font-size: 30px;
+	color: gold;
+}
+
+.nav-icon{
+	font-size: 50px;
+	color: gold;
+}
+
+#search-button{
+	font-size: 25px;
+	color: gold;
+}
+
+#search-text{
+	height: 52px;
+	width: 300px;
+}
+
+
+/* Image Gallery Styles */
+div.gallery 
+{
+	margin: 5px;
+	float: left;
+	width: 180px;
+    border: 1px solid #CCC;
+}
+
+div.gallery:hover 
+{
+	border: 1px solid #777;
+}
+
+div.gallery img 
+{
+	width: 100%;
+	height: auto;
+}
+
+div.desc 
+{
+	padding: 15px;
+	text-align: center;
+}
+
+#Back
+{
+   display: block;
+   clear: both;
+}
+
+body
+{
+   background-color: black;
+   color: gold;
+}
+
+/* Formatting Styles */
+.line{
+	background-color: gold;
+}
+

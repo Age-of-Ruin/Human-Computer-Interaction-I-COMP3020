@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Search Bar CSS -->
+	<link rel="stylesheet" type="text/css" href="SearchBar.css">
+	
+	<!-- Title (name in browser tab) -->
+	<title>Movie Flix</title>
+	
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+</head>
+
+
+<body>
+
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background:black">
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fas fa-bars" style="color:gold; font-size:40px"></span>
+		</button>
+
+  
+		<!-- COLLAPSABLE NAVBAR -->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			
+			<!-- MOVIE FLIX BRAND NAME-->
+			<div class="navbar-brand justify-content-end" style="color:gold; position:absolute; right:0; font-size:30px">Movie Flix</div>
+			
+			<!-- NAVBAR BUTTONS-->
+
+				<!-- HOME BUTTON -->
+			<div class="nav-item mx-1 my-2">
+				<a class="fas fa-home" href="SearchBar.html" style="color:gold; font-size:50px"></a>
+			</div>
+			<!-- SETTINGS BUTTON -->
+			<div class="nav-item mx-2 my-2">
+				<a class="fas fa-cog" href="SearchBar.html" style="color:gold; font-size:50px"></a>
+			</div>
+
+
+			<!-- SEARCH BAR COMBINED W/ BUTTON-->
+			<div class="form-inline mx-1 my-2">
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<button class="btn btn-outline-secondary" type="button" id="search-button">
+							<i class="fas fa-search" style="color:gold; font-size:30px"></i>
+						</button>
+					</div>
+					<input type="text" class="form-control" placeholder="Search" id="search-text" style="height:50px; width:300px">
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<!-- JavaScript/JQuery for Search -->
+	<script>
+		<!-- Declarations -->
+		var searchQuery;
+		var ititle;
+		var media = ["Jurassic Park", "Spider-Man", "Inception"]; 
+		
+		<!-- Get Search Query from Search Box -->
+		$(document).ready(function(){
+			$("#search-button").click(function(){
+				searchQuery = $("#search-text").val();
+				<!-- alert(searchQuery); -->
+				
+				for (ititle = 0; ititle < media.length; ititle++){
+					if (searchQuery == media[ititle])
+						document.getElementById("search-result").innerHTML = "Success";
+				}
+			});
+		});
+		
+	</script>
+	
+	
+	
+	<h1>MOVIE ART/BROWSER HERE!</h1>
+	<h2 id="search-result"></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Optional JavaScript -->
+
+
+	
+
+	
+</body>
+
+</html>

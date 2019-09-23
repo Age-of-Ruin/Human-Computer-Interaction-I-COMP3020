@@ -1,0 +1,2 @@
+# Project (Website Front-End)
+For the COMP3020 project, myself and 3 others prototyped/developed the front-end (HTML, CSS, JS) of a Netflix-like video browser. The group focused on usability and leveraging the users intuition to reduce time and frustration spent learning the application.
